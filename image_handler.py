@@ -33,10 +33,10 @@ class ImageHandler(FileSystemEventHandler):
 
             output_path = os.path.join(
                 self.output_directory,
-                f"{image_name_without_extension}.jpg"
+                f"{image_name_without_extension}.png"
             )
 
-            face_image.save(output_path, "JPEG")
+            face_image.save(output_path, "PNG")
 
             logging.info(f"Face from {image_path} saved")
 
